@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="modal">
+      <div class="modal-content">
+        <h1>Welcome to the Memory Game!</h1>
+        <p>
+          This is a simple memory game. You have to match the cards by clicking
+          on them. If you match the cards, they will stay open. If you don't
+          match the cards, they will flip back over. You have to match all the
+          cards to win the game.
+        </p>
+        <input
+          class="name-input"
+          type="text"
+          id="userName"
+          placeholder="Enter your name"
+        />
+        <button id="startBtn" class="start-btn">Start</button>
+      </div>
+    </div>
+
+    <!-- Game Board -->
+    <div id="gameBoard" class="gameBoard">
+      <div class="timer"></div>
+      <div id="cardsBoard" class="cardsBoard"></div>
+    </div>
+
+    <!-- Congrats Modal -->
+    <div id="congratsModal" class="modal">
+      <div class="modal-content">
+        <h1></h1>
+        <p></p>
+        <button
+          id="playAgainBtn"
+          class="play-again-btn"
+          onclick="window.location.reload()"
+        >
+          Play Again
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="module" src="app.js"></script>
+</html>
